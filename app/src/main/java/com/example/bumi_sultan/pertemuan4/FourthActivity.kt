@@ -31,8 +31,9 @@ class FourthActivity : AppCompatActivity() {
         val age = intent.getIntExtra("age",0)
         Log.e("Data Intent","Nama: $name , Usia: $age, Asal: $from")
         binding.btnKembali.setOnClickListener {
-            val i = Intent(this@FourthActivity, MainActivity::class.java)
-            startActivity(i)
+            //val i = Intent(this@FourthActivity, MainActivity::class.java)
+            //startActivity(i)
+            finish()
         }
     }
 }
