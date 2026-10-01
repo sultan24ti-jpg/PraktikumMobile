@@ -7,9 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.bumi_sultan.databinding.ActivityFourthBinding
 import com.example.bumi_sultan.databinding.ActivityMainBinding
 import com.example.bumi_sultan.pertemuan4.FourthActivity
+import com.example.bumi_sultan.pertemuan5.FifthActivity
 import kotlin.jvm.java
 
 
@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("name", "Politeknik Caltex Riau")
             i.putExtra("from", "Rumbai")
             i.putExtra("age", 25)
+
+            startActivity(i)
+        }
+        binding.btnToFifth.setOnClickListener {
+            val i = Intent(this@MainActivity, FifthActivity::class.java)
 
             startActivity(i)
         }
