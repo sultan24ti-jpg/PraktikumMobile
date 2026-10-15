@@ -1,6 +1,7 @@
 package com.example.bumi_sultan
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -32,14 +33,18 @@ class BaseActivity : AppCompatActivity() {
         binding.bottomNavView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
+                    Toast.makeText(this, "Home click", Toast.LENGTH_SHORT).show()
                     replaceFragment(HomeFragment())
                     true
                 }
                 R.id.message -> {
+                    Toast.makeText(this, "message click", Toast.LENGTH_SHORT).show()
+
                     replaceFragment(MessageFragment())
                     true
                 }
                 R.id.more -> {
+                    Toast.makeText(this, "more click", Toast.LENGTH_SHORT).show()
                     replaceFragment(MoreFragment())
                     true
                 }

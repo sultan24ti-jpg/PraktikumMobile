@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.bumi_sultan.databinding.FragmentHomeBinding
 import com.example.bumi_sultan.pertemuan2.SecondActivity
@@ -32,9 +33,12 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
+        (requireActivity() as AppCompatActivity).supportActionBar?.apply {
+            title = "Home"
+        }
+
         val sharedPref = requireActivity().getSharedPreferences("user_pref", Context.MODE_PRIVATE)
-        val username = sharedPref.getString("username", "User")
-        binding.tvUserHeader.text = "Selamat datang, $username!"
 
         binding.btnToSecond.setOnClickListener {
             val intent = Intent(requireContext(), SecondActivity::class.java)
