@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.bumi_sultan.MainActivity
 import com.example.bumi_sultan.R
 import com.example.bumi_sultan.pertemuan4.FourthActivity
 import com.example.bumi_sultan.databinding.ActivityFourthBinding

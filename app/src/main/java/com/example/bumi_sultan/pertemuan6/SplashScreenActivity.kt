@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.example.bumi_sultan.MainActivity
+import com.example.bumi_sultan.BaseActivity
 import com.example.bumi_sultan.R
 import com.example.bumi_sultan.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.delay
@@ -35,7 +35,7 @@ class SplashScreenActivity : AppCompatActivity() {
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
             if (isLogin) {
-                val intent = Intent(this@SplashScreenActivity, com.example.bumi_sultan.BaseActivity::class.java)
+                val intent = Intent(this@SplashScreenActivity, BaseActivity::class.java)
                 startActivity(intent)
             } else {
                 val intent = Intent(this@SplashScreenActivity, AuthActivity::class.java)

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.bumi_sultan.databinding.FragmentHomeBinding
+import com.example.bumi_sultan.pertemuan10.NinthActivity
 import com.example.bumi_sultan.pertemuan2.SecondActivity
 import com.example.bumi_sultan.pertemuan3.ThirdActivity
 import com.example.bumi_sultan.pertemuan4.FourthActivity
@@ -70,6 +71,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToSeventh.setOnClickListener {
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToNinth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
 

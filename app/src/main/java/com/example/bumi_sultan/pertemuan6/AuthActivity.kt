@@ -7,7 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.bumi_sultan.MainActivity
+import com.example.bumi_sultan.BaseActivity
 import com.example.bumi_sultan.R
 import com.example.bumi_sultan.databinding.ActivityAuthBinding
 
@@ -38,7 +38,7 @@ class AuthActivity : AppCompatActivity() {
                 editor.putString("username", username)
                 editor.apply()
 
-                val intent = Intent(this@AuthActivity, com.example.bumi_sultan.BaseActivity::class.java)
+                val intent = Intent(this@AuthActivity, BaseActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
