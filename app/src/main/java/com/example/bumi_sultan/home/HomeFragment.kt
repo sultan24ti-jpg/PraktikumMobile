@@ -10,13 +10,14 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.bumi_sultan.databinding.FragmentHomeBinding
-import com.example.bumi_sultan.pertemuan10.NinthActivity
-import com.example.bumi_sultan.pertemuan2.SecondActivity
-import com.example.bumi_sultan.pertemuan3.ThirdActivity
-import com.example.bumi_sultan.pertemuan4.FourthActivity
-import com.example.bumi_sultan.pertemuan5.FifthActivity
-import com.example.bumi_sultan.pertemuan6.AuthActivity
-import com.example.bumi_sultan.pertemuan7.SeventhActivity
+import com.example.bumi_sultan.home.pertemuan10.NinthActivity
+import com.example.bumi_sultan.home.pertemuan11.EleventhActivity
+import com.example.bumi_sultan.home.pertemuan2.SecondActivity
+import com.example.bumi_sultan.home.pertemuan3.ThirdActivity
+import com.example.bumi_sultan.home.pertemuan4.FourthActivity
+import com.example.bumi_sultan.home.pertemuan5.FifthActivity
+import com.example.bumi_sultan.home.pertemuan6.AuthActivity
+import com.example.bumi_sultan.home.pertemuan7.SeventhActivity
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -76,6 +77,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToNinth.setOnClickListener {
             val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToEleventh.setOnClickListener {
+            val intent = Intent(requireContext(), EleventhActivity::class.java)
             startActivity(intent)
         }
 

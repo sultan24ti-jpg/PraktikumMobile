@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bumi_Sultan">
         <activity
-            android:name=".pertemuan6.SplashScreenActivity"
+            android:name=".home.pertemuan6.SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".pertemuan6.AuthActivity"
+            android:name=".home.pertemuan6.AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -32,7 +32,7 @@
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan7.SeventhActivity"
+            android:name=".home.pertemuan7.SeventhActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -40,27 +40,40 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan3.ThirdActivity"
+            android:name=".home.pertemuan3.ThirdActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan4.FourthActivity"
+            android:name=".home.pertemuan4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan5.FifthActivity"
+            android:name=".home.pertemuan5.FifthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan3.ThirdResultActivity"
+            android:name=".home.pertemuan3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan5.WebViewActivity"
+            android:name=".home.pertemuan5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".pertemuan10.NinthActivity"
+            android:name=".home.pertemuan10.NinthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".home.pertemuan11.EleventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".home.pertemuan11.ProductAdapter"
+            android:exported="false"
+            android:theme="@style/Theme.Bumi_Sultan"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".message.tutorial.TutorialMessageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
