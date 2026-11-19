@@ -151,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="#D32F2F"
+                android:backgroundTint="#FD4B4B"
                 android:text="Logout" />
 
         </LinearLayout>
