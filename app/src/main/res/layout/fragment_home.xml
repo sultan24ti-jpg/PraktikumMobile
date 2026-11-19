@@ -11,7 +11,7 @@
         android:id="@+id/background_header"
         android:layout_width="0dp"
         android:layout_height="220dp"
-        android:background="@drawable/bg_header_wave"
+        android:background="@drawable/bg_header_half_circle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@color/black" />
 
     <TextView
         android:id="@+id/tvWelcomeTitle"
@@ -72,6 +72,7 @@
                 android:id="@+id/btnToSecond"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B5"
                 android:text="Pertemuan 2" />
 
             <Button
@@ -79,6 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="#B53F3F"
                 android:text="Pertemuan 3" />
 
             <Button
@@ -86,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="#B53F8C"
                 android:text="Pertemuan 4" />
 
             <Button
@@ -93,6 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="#9D3FB5"
                 android:text="Pertemuan 5" />
 
             <Button
@@ -100,6 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="#903FB5"
                 android:text="Pertemuan 6 (Auth)" />
 
             <Button
@@ -107,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#3F51B5"
+                android:backgroundTint="#513FB5"
                 android:text="Pertemuan 7 (Fragment)" />
 
             <Button
@@ -115,14 +120,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#6750A4"
+                android:backgroundTint="#3F51B5"
                 android:text="Pertemuan 10 (Input &amp; Grid)" />
             <Button
                 android:id="@+id/btnToEleventh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#6750A4"
+                android:backgroundTint="#3F92B5"
                 android:text="Pertemuan 11" />
 
             <Button
@@ -130,7 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#6750A4"
+                android:backgroundTint="#50A474"
                 android:text="Pertemuan 12 (Retrofit &amp; BaaS)" />
 
             <Button
@@ -138,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#6750A4"
+                android:backgroundTint="#50A49C"
                 android:text="Supabase Note CRUD" />
 
             <Button
