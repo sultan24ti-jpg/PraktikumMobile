@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment
 import com.example.bumi_sultan.databinding.FragmentHomeBinding
 import com.example.bumi_sultan.home.pertemuan10.NinthActivity
 import com.example.bumi_sultan.home.pertemuan11.EleventhActivity
+import com.example.bumi_sultan.home.pertemuan12.SupabaseActivity
+import com.example.bumi_sultan.home.pertemuan12.TwelfthActivity
 import com.example.bumi_sultan.home.pertemuan2.SecondActivity
 import com.example.bumi_sultan.home.pertemuan3.ThirdActivity
 import com.example.bumi_sultan.home.pertemuan4.FourthActivity
@@ -82,6 +84,16 @@ class HomeFragment : Fragment() {
 
         binding.btnToEleventh.setOnClickListener {
             val intent = Intent(requireContext(), EleventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToTwelfth.setOnClickListener {
+            val intent = Intent(requireContext(), TwelfthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToSupabase.setOnClickListener {
+            val intent = Intent(requireContext(), SupabaseActivity::class.java)
             startActivity(intent)
         }
 

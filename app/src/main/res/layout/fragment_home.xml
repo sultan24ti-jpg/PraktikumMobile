@@ -126,6 +126,22 @@
                 android:text="Pertemuan 11" />
 
             <Button
+                android:id="@+id/btnToTwelfth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#6750A4"
+                android:text="Pertemuan 12 (Retrofit &amp; BaaS)" />
+
+            <Button
+                android:id="@+id/btnToSupabase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#6750A4"
+                android:text="Supabase Note CRUD" />
+
+            <Button
                 android:id="@+id/btnLogout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
